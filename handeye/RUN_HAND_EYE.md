@@ -1,8 +1,3 @@
-
-# swap_team
-
-手眼标定有效源码位于 [`handeye/`](handeye/)，独立运行说明位于 [`handeye/RUN_HAND_EYE.md`](handeye/RUN_HAND_EYE.md)。
-
 # Handeye 眼在手上与眼在手外运行指令
 
 本工作空间同时支持：
@@ -180,4 +175,3 @@ source /home/guoyi/gy_ws/handeye/install/setup.bash
 
 ros2 launch handeye_calibration_ros handeye_auto.launch.py
 ```
-

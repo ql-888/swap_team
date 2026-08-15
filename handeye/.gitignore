@@ -1,0 +1,9 @@
+build/
+install/
+log/
+results/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
