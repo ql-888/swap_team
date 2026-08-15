@@ -1,0 +1,14 @@
+<library path="handeye_calibration_ros">
+  <class name="handeye_rqt/HandeyeRqtPlugin"
+         type="handeye_calibration_ros.handeye_rqt.HandeyeRqtPlugin"
+         base_class_type="rqt_gui_py::Plugin">
+    <description>Hand-eye calibration sample collection panel</description>
+    <qtgui>
+      <group>
+        <label>Hand-eye calibration</label>
+      </group>
+      <label>Sample collector</label>
+      <statustip>Collect synchronized ChArUco and Piper poses</statustip>
+    </qtgui>
+  </class>
+</library>
