@@ -22,6 +22,11 @@
   <exec_depend>python3-yaml</exec_depend>
   <exec_depend>rqt_gui_py</exec_depend>
   <exec_depend>python3-pyqt5</exec_depend>
+  <exec_depend>aruco_ros</exec_depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>orbbec_camera</exec_depend>
+  <exec_depend>rqt_image_view</exec_depend>
   <test_depend>python3-pytest</test_depend>
 
   <export>
