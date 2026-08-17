@@ -1,0 +1,40 @@
+charuco_detector:
+  ros__parameters:
+    # Board shown in the supplied generator screenshot.
+    columns: 6
+    rows: 9
+    dictionary: DICT_4X4_50
+    marker_id_offset: 0
+
+    # Metres. Measure the printed board; printer scaling changes the pose scale.
+    square_length: 0.030
+    marker_length: 0.0216
+
+    min_charuco_corners: 6
+    board_frame: charuco_board
+    pose_topic: /charuco/pose
+    result_image_topic: /charuco/result
+    publish_tf: true
+    draw_marker_ids: false
+    max_processing_rate_hz: 15.0
+    preview_width: 960
+    detection_width: 960
+
+handeye_session:
+  ros__parameters:
+    min_samples: 15
+    max_data_age_sec: 2.0
+    max_pair_time_delta_sec: 0.20
+    startup_timeout_sec: 20.0
+
+    # Reject duplicate poses and insufficient motion diversity.
+    min_sample_translation_m: 0.01
+    min_sample_rotation_deg: 5.0
+    min_motion_span_m: 0.05
+    min_motion_span_deg: 20.0
+
+    # A result is saved only when residuals and independent methods agree.
+    max_translation_rms_m: 0.02
+    max_rotation_rms_deg: 3.0
+    max_method_translation_spread_m: 0.03
+    max_method_rotation_spread_deg: 3.0
