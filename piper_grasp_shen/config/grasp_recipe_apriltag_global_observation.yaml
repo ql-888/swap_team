@@ -1,0 +1,18 @@
+object_id: apriltag_object
+
+# Gemini is used only to place the wrist camera where it can acquire the tag.
+# Keep the same tool orientation as the validated grasp, but stay 140 mm away
+# along the approach axis so fixed-camera error does not push the small tag out
+# of the D435i image. The D435i must reacquire the tag before any descent.
+object_from_tcp:
+  - [1.0, 0.0, 0.0, 0.0]
+  - [0.0, -0.8660254037844386, 0.5, 0.0]
+  - [0.0, -0.5, -0.8660254037844386, -0.025]
+  - [0.0, 0.0, 0.0, 1.0]
+
+axial_angles_deg: [0.0]
+pregrasp_distance_m: 0.14
+retreat_distance_m: 0.10
+gripper_opening_m: 0.07
+gripper_closed_m: 0.048
+execution_ready: false

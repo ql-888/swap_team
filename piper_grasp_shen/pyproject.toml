@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "piper-grasp"
+version = "0.1.0"
+description = "Guarded Pinocchio/Pink grasping stack for the AgileX Piper arm"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "pin>=3.0",
+  "pin-pink>=3.0",
+  "qpsolvers>=4.0",
+  "quadprog>=0.1.13",
+  "opencv-python-headless>=4.8",
+  "PyYAML>=6.0",
+  "piper-sdk==0.6.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+piper-grasp = "piper_pink.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+

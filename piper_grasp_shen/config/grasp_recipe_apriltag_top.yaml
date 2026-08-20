@@ -1,0 +1,24 @@
+object_id: apriltag_object
+
+# Desired measured TCP pose expressed in the AprilTag frame.
+# AprilTag +X is treated as the object's left/right direction. Piper TCP +X is
+# the physical two-finger closing direction. The TCP is 25 mm below the tag
+# surface along -tag-Z. TCP +Z approaches the object at a 30 degree tilt about
+# tag-X, so tilting does not change the required left/right finger direction.
+object_from_tcp:
+  - [1.0, 0.0, 0.0, 0.0]
+  - [0.0, -0.8660254037844386, 0.5, 0.0]
+  - [0.0, -0.5, -0.8660254037844386, -0.025]
+  - [0.0, 0.0, 0.0, 1.0]
+
+# Do not spin around the approach axis: doing so would no longer guarantee that
+# the fingers close from the tag's left and right sides.
+axial_angles_deg: [0.0]
+pregrasp_distance_m: 0.10
+retreat_distance_m: 0.10
+gripper_opening_m: 0.07
+
+# Measured object width at the grasp line. Start with the measured width and
+# validate contact/force at low speed before adding any compression allowance.
+gripper_closed_m: 0.048
+execution_ready: false

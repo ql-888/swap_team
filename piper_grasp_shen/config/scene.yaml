@@ -1,0 +1,10 @@
+boxes:
+  - name: table
+    size_m: [1.20, 1.20, 0.04]
+    xyz_m: [0.0, 0.0, -0.02]
+    rpy_deg: [0.0, 0.0, 0.0]
+    ignore_links: [base_link]
+
+# Add camera stands, bins, fences, and other fixed obstacles as more boxes.
+# Every box is expressed in base_link. Real execution should not proceed until
+# this file represents the physical workcell closely enough for the task.

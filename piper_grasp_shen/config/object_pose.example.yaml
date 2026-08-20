@@ -1,0 +1,11 @@
+frame_id: base_link
+object_id: demo_block
+confidence: 1.0
+timestamp_s: null
+frame_from_object:
+  # Offline regression pose. Combined with grasp_recipe.example.yaml it gives
+  # the verified Piper X TCP pose at q=[0, 1, -1, 0, 0, 0] rad.
+  - [0.064842970902228, -0.057976266535210, -0.996209888348441, 0.555797799971098]
+  - [-0.666532489730328, -0.745475982264948, -0.000000032717586, 0.000000019955145]
+  - [-0.742650543161764, 0.664006259296363, -0.086981942705298, 0.462624771363325]
+  - [0.0, 0.0, 0.0, 1.0]

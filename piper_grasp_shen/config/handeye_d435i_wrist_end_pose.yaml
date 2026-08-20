@@ -1,0 +1,27 @@
+# D435i 腕部局部相机手眼标定。
+# 原始 /end_pose 来自 Piper SDK 的 J6 末端位姿；Piper X URDF 中
+# link6 -> flange_link 是单位变换，因此运行时规范为 flange_link。
+camera_mount: wrist
+parent_frame: flange_link
+camera_frame: d435i_color_optical_frame
+parent_from_camera:
+  - [0.65678553055998, -0.7540242379670598, 0.008956305334257512, 0.024209894202688084]
+  - [0.7540769334462986, 0.6567523706387368, -0.006655982619115861, -0.06411619952823557]
+  - [-0.0008633025381371527, 0.011125296337359647, 0.9999377393068699, 0.11811047877267813]
+  - [0.0, 0.0, 0.0, 1.0]
+source:
+  file: calibration_data/d435i_eye_in_hand.json
+  camera: d435i
+  mode: eye_in_hand
+  transform_interpretation: flange_link_T_camera
+  piper_topic: /end_pose
+  marker_topic: /aruco_single/pose
+  original_reported_camera_frame: stereo_gazebo_left_camera_optical_frame
+  current_verified_camera_frame: d435i_color_optical_frame
+  camera_frame_normalization: the old aruco_ros launch hard-coded a legacy label; image_raw and camera_info both publish d435i_color_optical_frame
+  sample_count: 30
+  translation_rms_mm: 6.226178035798747
+  translation_max_mm: 12.199079703277883
+  rotation_rms_deg: 0.6733207439875502
+  rotation_max_deg: 1.4667597124657683
+  frame_mapping_confirmed: /end_pose is the J6 pose and link6 equals flange_link in the Piper X URDF

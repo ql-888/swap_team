@@ -1,0 +1,12 @@
+# Cartesian targets in base_link. Lengths are metres; RPY angles are degrees.
+# Start with the first point close to the current pose and use speed <= 10%.
+points:
+  - name: point_1
+    xyz_m: [0.397903, 0.121487, 0.460466]
+    rpy_deg: [-132.482988, 86.266769, 156.651846]
+  - name: point_2
+    xyz_m: [0.415809, -0.086348, 0.567882]
+    rpy_deg: [80.117676, 65.491686, -19.829811]
+  - name: point_3
+    xyz_m: [0.383833, -0.000002, 0.416823]
+    rpy_deg: [-89.998802, 77.807669, -179.999427]

@@ -1,0 +1,23 @@
+/**:
+  ros__parameters:
+    family: Standard52h13
+    # The measured outer dashed-box edge is 36.5 mm. Standard52h13 has
+    # width_at_border=6 and total_width=10, so pose estimation uses 21.9 mm.
+    size: 0.0219
+    max_hamming: 0
+    image_transport: raw
+    qos_profile: sensor_data
+    pose_estimation_method: pnp
+
+    detector:
+      threads: 2
+      decimate: 1.0
+      blur: 0.0
+      refine: true
+      sharpening: 0.25
+      debug: false
+
+    tag:
+      ids: [0]
+      frames: [gemini_standard52h13_0]
+      sizes: [0.0219]

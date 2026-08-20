@@ -1,0 +1,22 @@
+object_id: apriltag_object
+
+# Gemini-guided wrist-camera observation pose. Compared with the original
+# 140 mm grasp-axis pregrasp, this keeps the validated camera/tool orientation
+# and translates the D435i 40 mm along image +Y. The tag therefore moves well
+# inside the image instead of remaining clipped at its lower edge.
+object_from_tcp:
+  - [0.9719247541620342, -0.20666009182980266, 0.11248946035948666, -0.026500325545577956]
+  - [-0.2352276102853704, -0.8422474850361062, 0.4850640630986674, -0.1155568134404043]
+  - [-0.005499418742461323, -0.49790639722266244, -0.8672133393797885, 0.07771948500898956]
+  - [0.0, 0.0, 0.0, 1.0]
+
+axial_angles_deg: [0.0]
+
+# The matrix above is already the observation target. These positive 1 mm
+# values satisfy the generic grasp-plan schema while keeping all validated
+# stages effectively at the same observation pose.
+pregrasp_distance_m: 0.001
+retreat_distance_m: 0.001
+gripper_opening_m: 0.07
+gripper_closed_m: 0.048
+execution_ready: false
