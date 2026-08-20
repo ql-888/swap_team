@@ -1,0 +1,25 @@
+# Gemini 336L 固定全局相机手眼标定。
+# 由队友结果 base_T_camera 转换为 piper_grasp 的配置格式。
+camera_mount: fixed
+parent_frame: base_link
+camera_frame: camera_color_optical_frame
+parent_from_camera:
+  - [0.004005356511155619, 0.9258090712109998, -0.37797026441592463, 0.6589229214393953]
+  - [0.9997964208653903, 0.003767204786138331, 0.019822335706320693, 0.02259948292410663]
+  - [0.019775589598626964, -0.37797271307797436, -0.9256055068032499, 0.7379360892425801]
+  - [0.0, 0.0, 0.0, 1.0]
+source:
+  file: calibration_data/gemini336l_eye_to_hand.json
+  camera: orbbec_gemini_336l
+  mode: eye_to_hand
+  transform_name: base_T_camera
+  original_parent_frame: base
+  normalized_parent_frame: base_link
+  frame_mapping_confirmed: base is the same physical robot-base origin as base_link
+  method: HORAUD
+  sample_count: 16
+  quality_passed_by_source: true
+  translation_rms_mm: 7.7163808300572375
+  translation_max_mm: 22.48876925597506
+  rotation_rms_deg: 1.4881207072484575
+  rotation_max_deg: 3.2923155778776034

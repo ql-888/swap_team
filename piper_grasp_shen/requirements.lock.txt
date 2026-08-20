@@ -1,0 +1,13 @@
+# Runtime versions validated by this project. Regenerate only after rerunning tests.
+numpy==2.2.6
+scipy==1.15.2
+pin==4.1.0
+pin-pink==4.3.0
+qpsolvers==4.13.0
+quadprog==0.1.13
+# Installed from conda-forge by setup_env.sh (the PyPI package has a different version line).
+opencv==5.0.0
+PyYAML==6.0.3
+piper-sdk==0.6.2
+python-can==4.6.1
+pytest==9.1.1

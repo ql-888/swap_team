@@ -1,0 +1,13 @@
+calibration_type: flange_to_tcp
+parent_frame: flange_link
+child_frame: piper_tcp
+xyz_m: [0.0, 0.0, 0.198]
+rpy_deg: [0.0, 0.0, 48.2]
+translation_source: physical TCP pivot calibration
+orientation_source: three physical horizontal gripper-closing-line observations
+yaw_observations_deg: [49.6723, 47.5187, 47.3920]
+yaw_selected_deg: 48.2
+notes:
+  - The force sensor is installed between the flange and gripper.
+  - The +48.2 degree yaw is a fixed physical mounting correction.
+  - D435i hand-eye calibration remains flange_link_T_camera and is unchanged.

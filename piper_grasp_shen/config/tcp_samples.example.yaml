@@ -1,0 +1,11 @@
+# Record base_from_flange from at least six poses while the physical tool tip
+# remains on the same fixed point. The repeated identities below demonstrate
+# the file format only and are intentionally not a valid calibration dataset.
+base_from_flange:
+  - [[1, 0, 0, 0.30], [0, 1, 0, 0.00], [0, 0, 1, 0.20], [0, 0, 0, 1]]
+  - [[1, 0, 0, 0.30], [0, 1, 0, 0.00], [0, 0, 1, 0.20], [0, 0, 0, 1]]
+  - [[1, 0, 0, 0.30], [0, 1, 0, 0.00], [0, 0, 1, 0.20], [0, 0, 0, 1]]
+  - [[1, 0, 0, 0.30], [0, 1, 0, 0.00], [0, 0, 1, 0.20], [0, 0, 0, 1]]
+  - [[1, 0, 0, 0.30], [0, 1, 0, 0.00], [0, 0, 1, 0.20], [0, 0, 0, 1]]
+  - [[1, 0, 0, 0.30], [0, 1, 0, 0.00], [0, 0, 1, 0.20], [0, 0, 0, 1]]
+

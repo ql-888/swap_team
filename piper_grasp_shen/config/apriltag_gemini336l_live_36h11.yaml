@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    family: 36h11
+    # Pose is not used by the mounting viewer. This placeholder only satisfies
+    # apriltag_ros; configure the measured size before using pose output.
+    size: 0.018
+    max_hamming: 1
+    image_transport: raw
+    qos_profile: sensor_data
+    pose_estimation_method: pnp
+
+    detector:
+      threads: 2
+      decimate: 1.0
+      blur: 0.0
+      refine: true
+      sharpening: 0.25
+      debug: false

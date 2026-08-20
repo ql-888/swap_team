@@ -1,0 +1,10 @@
+.conda/
+.pytest_cache/
+**/__pycache__/
+*.py[cod]
+
+runtime/
+Log/
+*.log
+
+docs/CODEX_HANDOFF.md

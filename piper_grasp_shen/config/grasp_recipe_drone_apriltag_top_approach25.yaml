@@ -1,0 +1,14 @@
+object_id: apriltag_object
+
+object_from_tcp:
+  - [1.0, 0.0, 0.0, 0.0]
+  - [0.0, -0.8660254037844386, 0.5, 0.0]
+  - [0.0, -0.5, -0.8660254037844386, -0.045]
+  - [0.0, 0.0, 0.0, 1.0]
+
+axial_angles_deg: [0.0]
+pregrasp_distance_m: 0.025
+retreat_distance_m: 0.10
+gripper_opening_m: 0.085
+gripper_closed_m: 0.058
+execution_ready: false

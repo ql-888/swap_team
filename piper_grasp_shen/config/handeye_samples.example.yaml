@@ -1,0 +1,4 @@
+# File-format example for an eye-in-hand camera. Replace all matrices with
+# synchronized measurements; at least eight diverse paired poses are required.
+base_from_gripper: []
+camera_from_target: []

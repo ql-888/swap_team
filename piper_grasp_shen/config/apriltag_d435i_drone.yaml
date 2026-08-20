@@ -1,0 +1,22 @@
+/**:
+  ros__parameters:
+    # Drone tag: AprilRobotics tag36h11, ID 0, measured black-square side 29 mm.
+    family: 36h11
+    size: 0.029
+    max_hamming: 0
+    image_transport: raw
+    qos_profile: sensor_data
+    pose_estimation_method: pnp
+
+    detector:
+      threads: 2
+      decimate: 1.0
+      blur: 0.0
+      refine: true
+      sharpening: 0.25
+      debug: false
+
+    tag:
+      ids: [0]
+      frames: [apriltag_0]
+      sizes: [0.029]
